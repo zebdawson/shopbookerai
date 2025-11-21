@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about ShopBooker AI - our mission to help auto repair shops capture every customer opportunity with AI phone assistance.">
+
+    <title>About Us - ShopBooker AI | Our Story & Mission</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                        'gray-custom': '#6B7280',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="images/logo.png" alt="ShopBooker AI Logo" class="h-12 w-auto" id="logo-img">
+                        <span class="ml-3 text-2xl font-bold text-primary-blue">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="how-it-works.html" class="text-gray-700 hover:text-primary-blue font-medium transition">How It Works</a>
+                    <a href="demo.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Demo</a>
+                    <a href="pricing.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Pricing</a>
+                    <a href="about.html" class="text-secondary-orange font-bold">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Contact</a>
+                    <a href="demo.html" class="bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg hover:shadow-xl">Book a Demo</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Home</a>
+                <a href="how-it-works.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">How It Works</a>
+                <a href="demo.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Demo</a>
+                <a href="pricing.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Pricing</a>
+                <a href="about.html" class="block px-4 py-3 text-secondary-orange bg-orange-50 rounded-lg font-bold">About</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Contact</a>
+                <a href="demo.html" class="block mx-4 mt-4 bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-blue to-blue-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                About <span class="text-secondary-orange">ShopBooker AI</span>
+            </h1>
+            <p class="text-xl text-blue-100 mb-8" data-aos="fade-up" data-aos-delay="100">
+                We're on a mission to help every auto repair shop capture every customer opportunity
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold text-primary-blue mb-6">Our Story</h2>
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>
+                            ShopBooker AI was born from a simple observation: hardworking shop owners were losing thousands of dollars every month simply because they couldn't answer every phone call.
+                        </p>
+                        <p>
+                            Our founder, Zeb, watched his friend run a successful 4-bay auto repair shop. Business was booming, but there was one problem - phones rang constantly while the team was busy working on cars. Every unanswered call meant lost revenue.
+                        </p>
+                        <p>
+                            The solution seemed obvious: hire a receptionist. But the cost of a full-time employee with benefits would eat into already thin margins. And even with a receptionist, what about after hours? Nights? Weekends? Holidays?
+                        </p>
+                        <p>
+                            That's when we realized AI could solve this problem perfectly. An AI assistant could answer every call, book every appointment, handle every inquiry - 24/7/365, for a fraction of the cost of a human receptionist.
+                        </p>
+                        <p class="font-semibold text-primary-blue">
+                            ShopBooker AI was built specifically for auto repair shops by people who understand the industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-xl" data-aos="fade-left">
+                    <div class="bg-secondary-orange w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-lightbulb text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">The Problem We Solved</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700">Missed calls during busy hours</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700">Zero coverage after hours and weekends</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700">High cost of hiring receptionists</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700">Inconsistent booking process</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <p class="text-gray-700">Lost revenue from failed follow-ups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Our <span class="text-secondary-orange">Mission</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Three core values that drive everything we do
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Support Shop Owners</h3>
+                    <p class="text-gray-600">
+                        We're here to help hardworking shop owners capture every opportunity and grow their businesses without adding overhead.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Make AI Accessible</h3>
+                    <p class="text-gray-600">
+                        Advanced technology shouldn't be just for big corporations. We bring enterprise-level AI to small businesses at an affordable price.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Deliver Real Value</h3>
+                    <p class="text-gray-600">
+                        We only succeed when our customers succeed. Every feature we build is focused on real ROI and measurable business results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Why Choose <span class="text-secondary-orange">ShopBooker AI</span>
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex items-start" data-aos="fade-right">
+                    <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                        <i class="fas fa-wrench text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Built for Auto Repair Shops</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            We don't serve every industry - we focus exclusively on auto repair. Our AI is trained specifically on automotive services, terminology, and customer conversations. It understands the difference between an oil change and an alignment, and knows how to handle emergency situations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start" data-aos="fade-left">
+                    <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                        <i class="fas fa-handshake text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">We're in This Together</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Your success is our success. We provide hands-on onboarding, ongoing support, and continuous improvements. When you have questions, you talk to real people who understand your business - not a generic support team reading from a script.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start" data-aos="fade-right">
+                    <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Proven Results</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our customers see immediate results - fuller appointment books, happier customers, and measurable ROI in the first month. We track everything so you can see exactly how many calls you're capturing and how much revenue you're gaining.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start" data-aos="fade-left">
+                    <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Transparent & Honest</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            No hidden fees. No long-term contracts. No pressure. We believe in earning your business every single month with exceptional service and real value. Don't like it? Cancel anytime. It's that simple.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-blue to-blue-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-white mb-4">
+                    Our Impact <span class="text-secondary-orange">So Far</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl font-bold text-secondary-orange mb-2 counter" data-target="250">0</div>
+                    <div class="text-blue-100 font-semibold">K+ Shops Served</div>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl font-bold text-secondary-orange mb-2">1M+</div>
+                    <div class="text-blue-100 font-semibold">Calls Answered</div>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl font-bold text-secondary-orange mb-2">98%</div>
+                    <div class="text-blue-100 font-semibold">Customer Satisfaction</div>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl font-bold text-secondary-orange mb-2">24/7</div>
+                    <div class="text-blue-100 font-semibold">Always Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-6">
+                Ready to Join Us?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                See how ShopBooker AI can transform your shop. Book a free demo today.
+            </p>
+            <a href="demo.html" class="inline-block bg-secondary-orange text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-orange-600 transition shadow-2xl">
+                Book Your Free Demo <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.png" alt="ShopBooker AI" class="h-10 w-auto" id="footer-logo-img">
+                        <span class="ml-3 text-2xl font-bold">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Never Miss Another Customer. AI Phone Assistant for Auto Repair Shops.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-secondary-orange transition">Home</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-secondary-orange transition">How It Works</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-secondary-orange transition">Demo</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-secondary-orange transition">Pricing</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-secondary-orange transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-secondary-orange transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <i class="fas fa-envelope mr-2 text-secondary-orange"></i>
+                            <a href="mailto:support@shopbookerai.com" class="hover:text-secondary-orange transition">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock mr-2 text-secondary-orange"></i>
+                            24/7 Support Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-secondary-orange text-white w-14 h-14 rounded-full shadow-2xl hover:bg-orange-600 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

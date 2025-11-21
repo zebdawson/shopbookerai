@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how ShopBooker AI works - from call forwarding to automatic appointment booking. Simple setup, immediate results.">
+    <meta name="keywords" content="AI phone assistant, auto repair booking, how it works, appointment scheduling">
+
+    <title>How It Works - ShopBooker AI | AI Phone Assistant for Auto Repair Shops</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                        'gray-custom': '#6B7280',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="images/logo.png" alt="ShopBooker AI Logo" class="h-12 w-auto" id="logo-img">
+                        <span class="ml-3 text-2xl font-bold text-primary-blue">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="how-it-works.html" class="text-secondary-orange font-bold">How It Works</a>
+                    <a href="demo.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Demo</a>
+                    <a href="pricing.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Pricing</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Contact</a>
+                    <a href="demo.html" class="bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg hover:shadow-xl">Book a Demo</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Home</a>
+                <a href="how-it-works.html" class="block px-4 py-3 text-secondary-orange bg-orange-50 rounded-lg font-bold">How It Works</a>
+                <a href="demo.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Demo</a>
+                <a href="pricing.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Pricing</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">About</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Contact</a>
+                <a href="demo.html" class="block mx-4 mt-4 bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-blue to-blue-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                How <span class="text-secondary-orange">ShopBooker AI</span> Works
+            </h1>
+            <p class="text-xl text-blue-100 mb-8" data-aos="fade-up" data-aos-delay="100">
+                From missed call to booked appointment in seconds. Here's the complete process.
+            </p>
+        </div>
+    </section>
+
+    <!-- Flow Diagram Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    The Complete <span class="text-secondary-orange">Customer Journey</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    See exactly what happens when a customer calls your shop
+                </p>
+            </div>
+
+            <!-- Flow Steps -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        1
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-phone-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Customer Calls</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        A customer calls your shop number - whether it's 2 PM or 2 AM, during business hours or on a holiday.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        ⏱️ Response time: Instant
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        2
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AI Answers</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        ShopBooker AI picks up immediately with a natural, human-like greeting customized to your shop.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        💬 "Hi! Thanks for calling [Your Shop Name]"
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        3
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Natural Conversation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        The AI understands what they need - oil change, brake repair, diagnostics - and asks relevant questions.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        🎯 Trained on automotive services
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        4
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-check text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Checks Calendar</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        AI instantly checks your real-time availability and offers appointment slots that work.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        📅 Real-time calendar sync
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        5
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-check-circle text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Books Appointment</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Customer confirms the time, AI books it instantly, and adds it to your calendar system.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        ✅ Confirmed on the spot
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg relative" data-aos="fade-up" data-aos-delay="600">
+                    <div class="absolute -top-4 -right-4 bg-secondary-orange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">
+                        6
+                    </div>
+                    <div class="bg-primary-blue w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Sends Confirmation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Customer receives instant SMS/email confirmation with appointment details and your shop info.
+                    </p>
+                    <div class="bg-blue-100 rounded-lg p-3 text-sm text-primary-blue font-semibold">
+                        📲 Auto confirmation sent
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Real-World <span class="text-secondary-orange">Scenarios</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    See how ShopBooker AI handles different types of calls
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Scenario 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-moon text-3xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">After Hours Call</h3>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 mb-4">
+                        <p class="text-gray-700 italic mb-2">🕒 9:00 PM - Shop is closed</p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Customer:</strong> "Hi, my check engine light just came on. Can I bring it in tomorrow?"
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>AI:</strong> "Of course! Let me check our availability for tomorrow. Do you prefer morning or afternoon?"
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Result:</strong> Appointment booked for 10 AM the next day, confirmation sent.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <i class="fas fa-trophy mr-2"></i>
+                        Captured what would have been a lost opportunity
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-wrench text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Busy Time Call</h3>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 mb-4">
+                        <p class="text-gray-700 italic mb-2">🔧 2:00 PM - You're under a car</p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Customer:</strong> "I need an oil change this week. What do you have available?"
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>AI:</strong> "I can get you in Thursday at 2 PM or Friday at 11 AM. Which works better?"
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Result:</strong> Appointment booked while you kept working. No interruption.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <i class="fas fa-trophy mr-2"></i>
+                        You stayed productive, customer got booked
+                    </div>
+                </div>
+
+                <!-- Scenario 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-sync-alt text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Rescheduling Request</h3>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 mb-4">
+                        <p class="text-gray-700 italic mb-2">📞 Customer needs to change appointment</p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Customer:</strong> "I have an appointment tomorrow at 10, but something came up. Can I move it?"
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>AI:</strong> "No problem! I can reschedule you for next Tuesday at 10 AM or Wednesday at 2 PM."
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Result:</strong> Appointment moved, calendar updated, confirmation sent.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <i class="fas fa-trophy mr-2"></i>
+                        Handled without bothering you
+                    </div>
+                </div>
+
+                <!-- Scenario 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-question-circle text-3xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">General Inquiry</h3>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 mb-4">
+                        <p class="text-gray-700 italic mb-2">❓ Customer has questions</p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Customer:</strong> "Do you do transmission work? How much does a fluid change cost?"
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>AI:</strong> "Yes, we do! A transmission fluid change typically runs $150-200. Would you like to schedule one?"
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Result:</strong> Question answered, appointment booked if interested.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-green-600 font-semibold">
+                        <i class="fas fa-trophy mr-2"></i>
+                        Turned inquiry into booking
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    The <span class="text-secondary-orange">Technology</span> Behind It
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Powerful AI, simple for you to use
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Technology Description -->
+                <div data-aos="fade-right">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-brain text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Natural Language AI</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Built on advanced language models trained specifically for automotive service conversations. Understands context, slang, and regional dialects.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-shield-alt text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Secure & Private</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            All customer data is encrypted and stored securely. HIPAA-compliant infrastructure. We never sell or share your customer information.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-bolt text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Lightning Fast</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Response times under 1 second. Real-time calendar checking. Instant confirmations. Your customers won't experience any delays.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-line text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Constantly Learning</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            The AI improves over time, learning from every interaction to serve your customers better. You can review and rate conversations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tech Stats -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+                        <div class="text-5xl font-bold text-secondary-orange mb-2">99.9%</div>
+                        <div class="text-gray-600 font-semibold">Uptime Guarantee</div>
+                        <p class="text-gray-500 text-sm mt-2">Never worry about missed calls due to downtime</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+                        <div class="text-5xl font-bold text-secondary-orange mb-2">&lt;1s</div>
+                        <div class="text-gray-600 font-semibold">Response Time</div>
+                        <p class="text-gray-500 text-sm mt-2">Customers experience zero wait time</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+                        <div class="text-5xl font-bold text-secondary-orange mb-2">98%</div>
+                        <div class="text-gray-600 font-semibold">Customer Satisfaction</div>
+                        <p class="text-gray-500 text-sm mt-2">Customers can't tell it's AI - they just love the service</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+                        <div class="text-5xl font-bold text-secondary-orange mb-2">24/7</div>
+                        <div class="text-gray-600 font-semibold">Always Available</div>
+                        <p class="text-gray-500 text-sm mt-2">Nights, weekends, holidays - never miss a call</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Works With Your <span class="text-secondary-orange">Existing Tools</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    No need to change what you're already using
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Calendar Integration -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calendar-alt text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Calendar Systems</h3>
+                    <ul class="text-gray-600 space-y-2 text-left">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Google Calendar</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Microsoft Outlook</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Apple Calendar</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Calendly</li>
+                    </ul>
+                </div>
+
+                <!-- Shop Management -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Shop Management</h3>
+                    <ul class="text-gray-600 space-y-2 text-left">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Shop-Ware</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mitchell 1</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Tekmetric</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AutoFluent</li>
+                    </ul>
+                </div>
+
+                <!-- Communication -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-4xl text-primary-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Phone Systems</h3>
+                    <ul class="text-gray-600 space-y-2 text-left">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Any landline</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>VoIP systems</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mobile numbers</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Toll-free numbers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg text-center" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Setup Takes 20 Minutes</h3>
+                <p class="text-gray-600 mb-6">
+                    We'll walk you through connecting your calendar and phone system. Most shops are up and running in under 30 minutes.
+                </p>
+                <a href="demo.html" class="inline-block bg-secondary-orange text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-xl">
+                    See It In Action <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-blue to-blue-900">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to See It in Action?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Book a free demo and hear ShopBooker AI handle actual customer scenarios for your shop.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="demo.html" class="bg-secondary-orange text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-orange-600 transition shadow-2xl">
+                    Book Your Free Demo <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="pricing.html" class="bg-white text-primary-blue px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-100 transition shadow-2xl">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.png" alt="ShopBooker AI" class="h-10 w-auto" id="footer-logo-img">
+                        <span class="ml-3 text-2xl font-bold">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Never Miss Another Customer. AI Phone Assistant for Auto Repair Shops.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-secondary-orange transition">Home</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-secondary-orange transition">How It Works</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-secondary-orange transition">Demo</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-secondary-orange transition">Pricing</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-secondary-orange transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-secondary-orange transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <i class="fas fa-envelope mr-2 text-secondary-orange"></i>
+                            <a href="mailto:support@shopbookerai.com" class="hover:text-secondary-orange transition">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock mr-2 text-secondary-orange"></i>
+                            24/7 Support Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-secondary-orange text-white w-14 h-14 rounded-full shadow-2xl hover:bg-orange-600 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

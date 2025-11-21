@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ShopBooker AI - Get in touch with our team. We're here to answer your questions and help you get started.">
+
+    <title>Contact Us - ShopBooker AI | Get in Touch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                        'gray-custom': '#6B7280',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="images/logo.png" alt="ShopBooker AI Logo" class="h-12 w-auto" id="logo-img">
+                        <span class="ml-3 text-2xl font-bold text-primary-blue">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="how-it-works.html" class="text-gray-700 hover:text-primary-blue font-medium transition">How It Works</a>
+                    <a href="demo.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Demo</a>
+                    <a href="pricing.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Pricing</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About</a>
+                    <a href="contact.html" class="text-secondary-orange font-bold">Contact</a>
+                    <a href="demo.html" class="bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg hover:shadow-xl">Book a Demo</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Home</a>
+                <a href="how-it-works.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">How It Works</a>
+                <a href="demo.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Demo</a>
+                <a href="pricing.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Pricing</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">About</a>
+                <a href="contact.html" class="block px-4 py-3 text-secondary-orange bg-orange-50 rounded-lg font-bold">Contact</a>
+                <a href="demo.html" class="block mx-4 mt-4 bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-blue to-blue-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                Get in <span class="text-secondary-orange">Touch</span>
+            </h1>
+            <p class="text-xl text-blue-100 mb-8" data-aos="fade-up" data-aos-delay="100">
+                Questions? We're here to help. Reach out and we'll respond within 24 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                    <p class="text-gray-600 mb-8">
+                        Have a question about ShopBooker AI? Fill out the form below and we'll get back to you within 24 hours.
+                    </p>
+
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block text-gray-700 font-semibold mb-2">
+                                Your Name <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition"
+                                placeholder="John Smith">
+                        </div>
+
+                        <div>
+                            <label for="contact-email" class="block text-gray-700 font-semibold mb-2">
+                                Email Address <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition"
+                                placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label for="contact-phone" class="block text-gray-700 font-semibold mb-2">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                id="contact-phone"
+                                name="phone"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition"
+                                placeholder="(555) 123-4567">
+                        </div>
+
+                        <div>
+                            <label for="contact-shop" class="block text-gray-700 font-semibold mb-2">
+                                Shop Name
+                            </label>
+                            <input
+                                type="text"
+                                id="contact-shop"
+                                name="shop_name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition"
+                                placeholder="Smith's Auto Repair">
+                        </div>
+
+                        <div>
+                            <label for="contact-subject" class="block text-gray-700 font-semibold mb-2">
+                                Subject <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="contact-subject"
+                                name="subject"
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition">
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="demo">Request a Demo</option>
+                                <option value="pricing">Pricing Question</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="contact-message" class="block text-gray-700 font-semibold mb-2">
+                                Message <span class="text-red-500">*</span>
+                            </label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                required
+                                rows="5"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary-orange focus:ring-2 focus:ring-orange-200 transition"
+                                placeholder="Tell us how we can help..."></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-secondary-orange text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-xl hover:shadow-2xl">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+
+                        <p class="text-gray-600 text-sm text-center">
+                            <i class="fas fa-lock mr-1"></i>
+                            Your information is secure and will never be shared.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
+
+                    <div class="space-y-6 mb-12">
+                        <div class="flex items-start">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Email Us</h3>
+                                <p class="text-gray-600 mb-2">We typically respond within 24 hours</p>
+                                <a href="mailto:support@shopbookerai.com" class="text-secondary-orange font-semibold hover:underline">
+                                    support@shopbookerai.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Support Hours</h3>
+                                <p class="text-gray-600">24/7 Customer Support</p>
+                                <p class="text-gray-600">We're always here to help</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-secondary-orange w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-question-circle text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Have Questions?</h3>
+                                <p class="text-gray-600 mb-2">Check out our FAQ below or book a demo</p>
+                                <a href="demo.html" class="text-secondary-orange font-semibold hover:underline">
+                                    Book a Free Demo →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Quick Links</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="demo.html" class="flex items-center text-gray-700 hover:text-secondary-orange transition">
+                                    <i class="fas fa-arrow-right text-secondary-orange mr-2"></i>
+                                    Book a Demo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="how-it-works.html" class="flex items-center text-gray-700 hover:text-secondary-orange transition">
+                                    <i class="fas fa-arrow-right text-secondary-orange mr-2"></i>
+                                    How It Works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pricing.html" class="flex items-center text-gray-700 hover:text-secondary-orange transition">
+                                    <i class="fas fa-arrow-right text-secondary-orange mr-2"></i>
+                                    View Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="flex items-center text-gray-700 hover:text-secondary-orange transition">
+                                    <i class="fas fa-arrow-right text-secondary-orange mr-2"></i>
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-primary-blue mb-4">
+                    Frequently Asked <span class="text-secondary-orange">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Quick answers to common questions
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        How quickly can I get started?
+                    </h3>
+                    <p class="text-gray-600">
+                        Most shops are up and running within 24 hours. Our onboarding team will help you set up your calendar integration and customize the AI for your shop.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        What if I need help after setup?
+                    </h3>
+                    <p class="text-gray-600">
+                        We offer 24/7 customer support. Email us anytime at support@shopbookerai.com and we'll respond within 24 hours (usually much faster).
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Can I customize what the AI says?
+                    </h3>
+                    <p class="text-gray-600">
+                        Absolutely! During setup, we'll train the AI on your specific services, pricing, hours, and brand voice. You can update these anytime.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        What calendar systems do you integrate with?
+                    </h3>
+                    <p class="text-gray-600">
+                        We integrate with Google Calendar, Microsoft Outlook, Apple Calendar, Calendly, and most major shop management systems like Shop-Ware, Mitchell 1, and Tekmetric.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Do you offer a money-back guarantee?
+                    </h3>
+                    <p class="text-gray-600">
+                        We offer month-to-month service with no long-term contracts. If you're not happy, simply cancel with 30 days notice. No questions asked.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-blue to-blue-900">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Prefer to See It in Action?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Book a free 15-minute demo and experience ShopBooker AI firsthand.
+            </p>
+            <a href="demo.html" class="inline-block bg-secondary-orange text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-orange-600 transition shadow-2xl">
+                Book Your Free Demo <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.png" alt="ShopBooker AI" class="h-10 w-auto" id="footer-logo-img">
+                        <span class="ml-3 text-2xl font-bold">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Never Miss Another Customer. AI Phone Assistant for Auto Repair Shops.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-secondary-orange transition">Home</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-secondary-orange transition">How It Works</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-secondary-orange transition">Demo</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-secondary-orange transition">Pricing</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-secondary-orange transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-secondary-orange transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <i class="fas fa-envelope mr-2 text-secondary-orange"></i>
+                            <a href="mailto:support@shopbookerai.com" class="hover:text-secondary-orange transition">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock mr-2 text-secondary-orange"></i>
+                            24/7 Support Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-secondary-orange text-white w-14 h-14 rounded-full shadow-2xl hover:bg-orange-600 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

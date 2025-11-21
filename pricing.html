@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopBooker AI pricing - Simple, transparent pricing for auto repair shops. No long-term contracts. Cancel anytime.">
+
+    <title>Pricing - ShopBooker AI | Simple Transparent Pricing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                        'gray-custom': '#6B7280',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="images/logo.png" alt="ShopBooker AI Logo" class="h-12 w-auto" id="logo-img">
+                        <span class="ml-3 text-2xl font-bold text-primary-blue">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="how-it-works.html" class="text-gray-700 hover:text-primary-blue font-medium transition">How It Works</a>
+                    <a href="demo.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Demo</a>
+                    <a href="pricing.html" class="text-secondary-orange font-bold">Pricing</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Contact</a>
+                    <a href="demo.html" class="bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition shadow-lg hover:shadow-xl">Book a Demo</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Home</a>
+                <a href="how-it-works.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">How It Works</a>
+                <a href="demo.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Demo</a>
+                <a href="pricing.html" class="block px-4 py-3 text-secondary-orange bg-orange-50 rounded-lg font-bold">Pricing</a>
+                <a href="about.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">About</a>
+                <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg font-medium">Contact</a>
+                <a href="demo.html" class="block mx-4 mt-4 bg-secondary-orange text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-orange-600 transition">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-blue to-blue-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                Simple, <span class="text-secondary-orange">Transparent</span> Pricing
+            </h1>
+            <p class="text-xl text-blue-100 mb-8" data-aos="fade-up" data-aos-delay="100">
+                One plan. No hidden fees. No long-term contracts. Cancel anytime.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <!-- Pricing Card -->
+                <div class="bg-gradient-to-br from-primary-blue to-blue-900 rounded-3xl shadow-2xl p-12 text-white" data-aos="fade-right">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold mb-4">Professional Plan</h2>
+                        <p class="text-blue-200">Everything you need to never miss a call</p>
+                    </div>
+
+                    <div class="text-center mb-8">
+                        <div class="text-6xl font-bold mb-2">
+                            $797<span class="text-2xl font-normal">/mo</span>
+                        </div>
+                        <p class="text-blue-200">Month-to-month. Cancel anytime.</p>
+                    </div>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Unlimited calls & appointments</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>24/7 AI phone coverage</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Calendar integration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>SMS & email confirmations</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Call recordings & transcripts</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Analytics dashboard</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Custom shop training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>Setup & onboarding included</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary-orange text-2xl mr-4"></i>
+                            <span>24/7 customer support</span>
+                        </div>
+                    </div>
+
+                    <a href="demo.html" class="block w-full bg-secondary-orange text-white text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-xl">
+                        Get Started Now
+                    </a>
+                </div>
+
+                <!-- Value Proposition -->
+                <div data-aos="fade-left">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Why This Price Makes Sense</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-user-times text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800 mb-2">vs. Hiring a Receptionist</h4>
+                                <p class="text-gray-600">Full-time receptionist: $2,500-3,500/mo + benefits. ShopBooker AI: $797/mo, works 24/7.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-slash text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800 mb-2">vs. Lost Revenue</h4>
+                                <p class="text-gray-600">Missing just 2-3 calls per week = $4,000-6,000 lost monthly. ROI is immediate.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-dollar-sign text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800 mb-2">Pays for Itself in Days</h4>
+                                <p class="text-gray-600">Book just 2 extra jobs per month and you've covered the cost. Everything else is pure profit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-2 border-green-300 rounded-xl p-6 mt-8">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-gift text-green-600 text-2xl mr-3"></i>
+                            <h4 class="text-xl font-bold text-gray-800">First Month Special</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            <strong>Setup & training included FREE</strong> (normally $500 value). We'll get you up and running in under 24 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Calculate Your <span class="text-secondary-orange">ROI</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    See how quickly ShopBooker AI pays for itself
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="space-y-8 mb-8">
+                    <div>
+                        <label class="block text-lg font-bold text-gray-800 mb-4">
+                            How many calls do you miss per week?
+                            <span class="text-secondary-orange ml-2" id="missed-calls-value-pricing">10</span>
+                        </label>
+                        <input type="range" min="1" max="50" value="10" class="w-full h-3 bg-gray-300 rounded-lg appearance-none cursor-pointer slider" id="missed-calls-pricing">
+                        <div class="flex justify-between text-sm text-gray-600 mt-2">
+                            <span>1</span>
+                            <span>50</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-lg font-bold text-gray-800 mb-4">
+                            What's your average ticket size?
+                            <span class="text-secondary-orange ml-2">$<span id="ticket-size-value-pricing">500</span></span>
+                        </label>
+                        <input type="range" min="100" max="2000" value="500" step="50" class="w-full h-3 bg-gray-300 rounded-lg appearance-none cursor-pointer slider" id="ticket-size-pricing">
+                        <div class="flex justify-between text-sm text-gray-600 mt-2">
+                            <span>$100</span>
+                            <span>$2,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="text-center">
+                            <div class="text-gray-600 font-semibold mb-2">Your Monthly Lost Revenue</div>
+                            <div class="text-5xl font-bold text-red-600">$<span id="monthly-lost-pricing">20,000</span></div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-600 font-semibold mb-2">ShopBooker AI Cost</div>
+                            <div class="text-5xl font-bold text-primary-blue">$797</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border-2 border-green-300 rounded-xl p-6 text-center">
+                        <div class="text-gray-700 font-semibold mb-3">Your Monthly Savings</div>
+                        <div class="text-6xl font-bold text-green-600 mb-4">$<span id="monthly-savings">19,203</span></div>
+                        <div class="text-gray-700">
+                            That's a <strong class="text-secondary-orange"><span id="roi-percentage">2,410</span>%</strong> return on investment
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="demo.html" class="inline-block bg-secondary-orange text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-xl">
+                        See It in Action <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-blue mb-4">
+                    Pricing <span class="text-secondary-orange">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about ShopBooker AI pricing
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Is there a setup fee?
+                    </h3>
+                    <p class="text-gray-600">
+                        No setup fee! We include setup and training for free (normally a $500 value). We'll have you up and running in under 24 hours.
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Are there any long-term contracts?
+                    </h3>
+                    <p class="text-gray-600">
+                        No contracts. We offer month-to-month service. You can cancel anytime with 30 days notice. No penalties, no hassles.
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        What's included in the $797/month?
+                    </h3>
+                    <p class="text-gray-600 mb-3">
+                        Everything! Unlimited calls, 24/7 coverage, calendar integration, SMS/email confirmations, call recordings, analytics, custom training, and 24/7 support. No hidden fees or usage charges.
+                    </p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Do you offer a free trial?
+                    </h3>
+                    <p class="text-gray-600">
+                        We offer a free 15-minute live demo where you can call and test the system yourself. This gives you a real feel for how it works before committing.
+                    </p>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        What if I need to cancel?
+                    </h3>
+                    <p class="text-gray-600">
+                        Simply give us 30 days notice and we'll cancel your service. No cancellation fees, no questions asked. We only want happy customers.
+                    </p>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                        <i class="fas fa-question-circle text-secondary-orange mr-2"></i>
+                        Are there any extra charges for additional features?
+                    </h3>
+                    <p class="text-gray-600">
+                        No. Everything is included in the base price. Unlimited calls, unlimited appointments, all features included. What you see is what you pay.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-blue to-blue-900">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Stop Losing Money?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Book a free demo and see exactly how ShopBooker AI will pay for itself.
+            </p>
+            <a href="demo.html" class="inline-block bg-secondary-orange text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-orange-600 transition shadow-2xl">
+                Book Your Free Demo <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.png" alt="ShopBooker AI" class="h-10 w-auto" id="footer-logo-img">
+                        <span class="ml-3 text-2xl font-bold">ShopBooker<span class="text-secondary-orange">AI</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Never Miss Another Customer. AI Phone Assistant for Auto Repair Shops.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary-orange transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-secondary-orange transition">Home</a></li>
+                        <li><a href="how-it-works.html" class="text-gray-400 hover:text-secondary-orange transition">How It Works</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-secondary-orange transition">Demo</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-secondary-orange transition">Pricing</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-secondary-orange transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-secondary-orange transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <i class="fas fa-envelope mr-2 text-secondary-orange"></i>
+                            <a href="mailto:support@shopbookerai.com" class="hover:text-secondary-orange transition">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock mr-2 text-secondary-orange"></i>
+                            24/7 Support Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-secondary-orange text-white w-14 h-14 rounded-full shadow-2xl hover:bg-orange-600 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>
