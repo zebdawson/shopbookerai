@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See exactly how ShopBooker AI answers calls, books appointments, and grows your auto repair business automatically. Simple setup, powerful results.">
+
+    <title>How It Works - ShopBooker AI | AI Phone Assistant for Auto Shops</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon for shopbookerai.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="how-it-works.html" class="nav-link active">How It Works</a>
+                    <a href="demo.html" class="nav-link">Demo</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="#get-started" class="cta-btn">
+                        Start Free Month
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn lg:hidden" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="how-it-works.html" class="mobile-menu-link active">How It Works</a>
+            <a href="demo.html" class="mobile-menu-link">Demo</a>
+            <a href="pricing.html" class="mobile-menu-link">Pricing</a>
+            <a href="about.html" class="mobile-menu-link">About</a>
+            <a href="contact.html" class="mobile-menu-link">Contact</a>
+            <a href="#get-started" class="mobile-menu-cta">Start Free Month</a>
+        </nav>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="badge mb-6" data-aos="fade-down">
+                    <i class="fas fa-cogs mr-2"></i>
+                    Simple. Powerful. Automated.
+                </div>
+
+                <h1 class="hero-headline mb-6" data-aos="fade-up" data-aos-delay="100">
+                    Your AI Employee Works <span class="highlight-gradient">24/7</span><br>
+                    While You Focus on <span class="highlight-gradient">Turning Wrenches</span>
+                </h1>
+
+                <p class="hero-subtext mb-8" data-aos="fade-up" data-aos-delay="200">
+                    No complicated setup. No technical knowledge required. No ongoing management.<br>
+                    Just install and start booking more appointments within 48 hours.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#process" class="btn-secondary">
+                        See The Process
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </a>
+                    <a href="demo.html" class="btn-outline">
+                        Try Interactive Demo
+                        <i class="fas fa-play ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-number-lg">2 min</div>
+                        <div class="stat-label">Setup Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number-lg">24/7</div>
+                        <div class="stat-label">Always Available</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number-lg">98%</div>
+                        <div class="stat-label">Answer Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number-lg">0</div>
+                        <div class="stat-label">Calls Missed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS FLOW ==================== -->
+    <section class="section bg-gray-50" id="process">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    The Exact 4-Step Process That <span class="highlight-gradient">Automates Your Phone</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    From installation to booked appointments in under 48 hours
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="process-flow">
+                <!-- Step 1 -->
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="process-number">1</div>
+                    <div class="process-content">
+                        <div class="process-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="process-title">Quick Setup (2 Minutes)</h3>
+                        <p class="process-description">
+                            We set up your AI phone assistant with your shop's information, hours, services, and pricing.
+                            Forward your calls or get a new number. That's it. No complicated software to learn.
+                        </p>
+                        <div class="process-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Enter basic shop info (name, hours, services)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Choose: Forward existing number or get new one</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Connect your calendar (Google, Outlook, or ours)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Set your booking preferences</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="process-connector" data-aos="fade-down" data-aos-delay="150">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="process-number">2</div>
+                    <div class="process-content">
+                        <div class="process-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3 class="process-title">Calls Start Coming In</h3>
+                        <p class="process-description">
+                            Your AI assistant answers every call in under 2 seconds. Customers can't tell it's AI.
+                            It sounds natural, professional, and knows your business inside-out.
+                        </p>
+                        <div class="process-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Answers with your shop's custom greeting</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Understands automotive terminology perfectly</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Handles multiple calls simultaneously</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Natural conversation - not robotic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="process-connector" data-aos="fade-down" data-aos-delay="250">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="process-number">3</div>
+                    <div class="process-content">
+                        <div class="process-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="process-title">Appointments Get Booked Automatically</h3>
+                        <p class="process-description">
+                            The AI qualifies the customer, answers their questions, provides a quote estimate,
+                            and books them into your calendar - all without you lifting a finger.
+                        </p>
+                        <div class="process-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Collects vehicle info (year, make, model, issue)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Provides accurate service estimates</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Offers available time slots from your calendar</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Confirms appointment and sends SMS reminder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connector -->
+                <div class="process-connector" data-aos="fade-down" data-aos-delay="350">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="process-number">4</div>
+                    <div class="process-content">
+                        <div class="process-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="process-title">Watch Your Revenue Grow</h3>
+                        <p class="process-description">
+                            Get instant notifications for every booked appointment. See detailed analytics on your dashboard.
+                            Watch as you never miss another call and your calendar fills up automatically.
+                        </p>
+                        <div class="process-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Instant SMS/email when appointments are booked</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Daily summary of all calls and bookings</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Full call recordings and transcripts</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check text-green-600"></i>
+                                <span>Revenue tracking and analytics dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="text-center mt-16" data-aos="fade-up">
+                <p class="text-xl font-semibold mb-4">Ready to automate your phone in 2 minutes?</p>
+                <a href="#get-started" class="cta-btn cta-btn-lg">
+                    Start Your Free Month Now
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <p class="text-sm text-gray-600 mt-4">No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHAT IT HANDLES ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    Every Type of Call, <span class="highlight-gradient">Handled Perfectly</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Your AI assistant is trained to handle everything your shop encounters
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Call Type 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon bg-blue-100 text-blue-600">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="feature-title">New Appointments</h3>
+                    <p class="feature-description">
+                        Books oil changes, tire rotations, brake jobs, inspections - anything you offer.
+                        Asks the right qualifying questions and finds the perfect time slot.
+                    </p>
+                </div>
+
+                <!-- Call Type 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-icon bg-orange-100 text-orange-600">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="feature-title">Service Questions</h3>
+                    <p class="feature-description">
+                        "How much for an alignment?" "Do you work on diesels?" "Can you fix my check engine light?"
+                        Answers instantly with accurate information.
+                    </p>
+                </div>
+
+                <!-- Call Type 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon bg-green-100 text-green-600">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="feature-title">Price Quotes</h3>
+                    <p class="feature-description">
+                        Provides accurate price ranges for common services. For complex jobs,
+                        collects details and schedules a diagnostic appointment.
+                    </p>
+                </div>
+
+                <!-- Call Type 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Reschedules & Cancellations</h3>
+                    <p class="feature-description">
+                        Handles appointment changes professionally. Finds new time slots,
+                        confirms changes, and updates your calendar automatically.
+                    </p>
+                </div>
+
+                <!-- Call Type 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon bg-red-100 text-red-600">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="feature-title">Emergency Services</h3>
+                    <p class="feature-description">
+                        Recognizes urgent situations ("car won't start", "brakes making noise").
+                        Prioritizes these calls and can page you immediately if configured.
+                    </p>
+                </div>
+
+                <!-- Call Type 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3 class="feature-title">General Info</h3>
+                    <p class="feature-description">
+                        Hours, location, services offered, payment methods, warranties -
+                        answers every common question so you don't have to.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECHNOLOGY SECTION ==================== -->
+    <section class="section bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="badge badge-light mb-6">
+                        <i class="fas fa-microchip mr-2"></i>
+                        Advanced AI Technology
+                    </div>
+                    <h2 class="section-title-light mb-6">
+                        Built on Enterprise-Grade AI
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-8">
+                        ShopBooker AI uses the same advanced language models that power the world's
+                        most sophisticated AI systems - specifically trained and fine-tuned for automotive service.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="tech-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Natural Language Processing</h4>
+                                <p class="text-gray-400">
+                                    Understands context, slang, and complex automotive terminology.
+                                    Handles accents and background noise flawlessly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="tech-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Real-Time Learning</h4>
+                                <p class="text-gray-400">
+                                    Gets smarter with every call. Learns your shop's specific services,
+                                    pricing, and preferences to serve customers better.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="tech-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Enterprise Security</h4>
+                                <p class="text-gray-400">
+                                    Bank-level encryption. HIPAA-compliant data handling.
+                                    Your customer information is 100% secure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="tech-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2">Lightning Fast</h4>
+                                <p class="text-gray-400">
+                                    Answers calls in under 2 seconds. Processes speech in real-time.
+                                    Zero lag, zero frustration for your customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                        <h3 class="text-2xl font-bold mb-6 text-center">By The Numbers</h3>
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-6 bg-gray-900 rounded-xl">
+                                <div class="text-4xl font-black text-secondary-orange mb-2">99.8%</div>
+                                <div class="text-sm text-gray-400">Accuracy Rate</div>
+                            </div>
+
+                            <div class="text-center p-6 bg-gray-900 rounded-xl">
+                                <div class="text-4xl font-black text-secondary-orange mb-2">&lt;2s</div>
+                                <div class="text-sm text-gray-400">Answer Time</div>
+                            </div>
+
+                            <div class="text-center p-6 bg-gray-900 rounded-xl">
+                                <div class="text-4xl font-black text-secondary-orange mb-2">100+</div>
+                                <div class="text-sm text-gray-400">Calls/Day</div>
+                            </div>
+
+                            <div class="text-center p-6 bg-gray-900 rounded-xl">
+                                <div class="text-4xl font-black text-secondary-orange mb-2">24/7</div>
+                                <div class="text-sm text-gray-400">Availability</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 p-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl">
+                            <p class="text-center font-semibold text-lg">
+                                "It's like having a receptionist who never takes a break,
+                                never gets sick, and never forgets to book an appointment."
+                            </p>
+                            <p class="text-center text-sm mt-2 opacity-90">- Mike T., Shop Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPARISON ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    ShopBooker AI vs. <span class="highlight-gradient">Everything Else</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    See why shop owners are switching to AI
+                </p>
+            </div>
+
+            <div class="comparison-table" data-aos="fade-up" data-aos-delay="200">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th class="text-left">Feature</th>
+                                <th class="text-center bg-secondary-orange text-white">
+                                    <div class="font-black text-xl">ShopBooker AI</div>
+                                    <div class="text-sm font-normal opacity-90">$797/month</div>
+                                </th>
+                                <th class="text-center">
+                                    <div class="font-bold">Full-Time Receptionist</div>
+                                    <div class="text-sm text-gray-600">~$3,500/month</div>
+                                </th>
+                                <th class="text-center">
+                                    <div class="font-bold">Answering Service</div>
+                                    <div class="text-sm text-gray-600">$500-1,200/month</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Answers Every Call</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Books Appointments</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Available 24/7/365</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Knows Your Services</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Provides Accurate Quotes</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Never Calls In Sick</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Handles Multiple Calls at Once</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                            </tr>
+                            <tr>
+                                <td>No Training Required</td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600 text-xl"></i></td>
+                                <td class="text-center"><i class="fas fa-times-circle text-red-500"></i></td>
+                                <td class="text-center"><i class="fas fa-check-circle text-green-600"></i></td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td class="font-bold">Total Monthly Cost</td>
+                                <td class="text-center font-black text-2xl text-green-600">$797</td>
+                                <td class="text-center font-bold text-xl">$3,500+</td>
+                                <td class="text-center font-bold text-xl">$500-1,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up">
+                <p class="text-xl font-semibold mb-4">The choice is obvious.</p>
+                <a href="#get-started" class="cta-btn cta-btn-lg">
+                    Try ShopBooker AI Free for 30 Days
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GET STARTED SECTION ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white" id="get-started">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
+                    Start Your Free Month Today
+                </h2>
+                <p class="text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    Join 500+ auto shops already using ShopBooker AI to never miss another call
+                </p>
+
+                <!-- Form -->
+                <form class="cta-form ghl-form" data-validate="true" data-aos="fade-up" data-aos-delay="200">
+                    <!-- TODO: Add your GoHighLevel webhook URL here -->
+                    <!-- Get your webhook from: GoHighLevel > Settings > Integrations > Webhooks -->
+                    <!-- Example: action="https://your-ghl-webhook-url.com/webhook" -->
+
+                    <input
+                        type="text"
+                        name="shop_name"
+                        placeholder="Your Shop Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="text"
+                        name="full_name"
+                        placeholder="Your Full Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required
+                        class="form-input"
+                    >
+
+                    <input type="hidden" name="source" value="How It Works Page">
+                    <input type="hidden" name="form_type" value="Free Month Signup">
+
+                    <button type="submit" class="cta-btn cta-btn-lg w-full">
+                        Start My Free Month Now
+                        <i class="fas fa-rocket ml-2"></i>
+                    </button>
+
+                    <p class="text-sm mt-4 opacity-75">
+                        <i class="fas fa-lock mr-1"></i>
+                        No credit card required • 2-minute setup • Cancel anytime
+                    </p>
+                </form>
+
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap justify-center gap-8 mt-12 opacity-75" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                        <span class="text-sm">Enterprise Security</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-headset text-2xl"></i>
+                        <span class="text-sm">24/7 Support</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-sync text-2xl"></i>
+                        <span class="text-sm">Cancel Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img mb-4">
+                    <p class="text-gray-400 text-sm mb-4">
+                        AI-powered phone assistant for auto repair shops. Never miss a call, never lose a customer.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:support@shopbookerai.com">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+18005551234">(800) 555-1234</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
