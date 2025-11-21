@@ -34,6 +34,21 @@ function initializeAllFeatures() {
 
     // Animations
     initAOS();
+
+    // Update copyright year
+    updateCopyrightYear();
+}
+
+// ==========================================
+// UPDATE COPYRIGHT YEAR
+// ==========================================
+function updateCopyrightYear() {
+    const currentYear = new Date().getFullYear();
+    const copyrightElements = document.querySelectorAll('.copyright-year');
+
+    copyrightElements.forEach(el => {
+        el.textContent = currentYear;
+    });
 }
 
 // ==========================================
@@ -788,22 +803,38 @@ function showNotification(type, message) {
 // SPOTS COUNTDOWN
 // ==========================================
 function initSpotsCountdown() {
-    const spotsElement = document.getElementById('spotsRemaining');
-    if (!spotsElement) return;
+    // Get all spots remaining elements (multiple on homepage)
+    const spotsElements = [
+        document.getElementById('spotsRemaining'),
+        document.getElementById('spotsRemaining2'),
+        document.getElementById('spotsRemaining3')
+    ].filter(el => el !== null);
+
+    if (spotsElements.length === 0) return;
 
     // Start with a number between 8-15
     let spotsRemaining = Math.floor(Math.random() * 8) + 8;
-    spotsElement.textContent = spotsRemaining;
+
+    // Update all spots elements
+    function updateAllSpots(value) {
+        spotsElements.forEach(el => {
+            el.textContent = value;
+        });
+    }
+
+    updateAllSpots(spotsRemaining);
 
     // Decrease spots occasionally to create urgency
     setInterval(function() {
         if (spotsRemaining > 3 && Math.random() > 0.7) {
             spotsRemaining--;
-            spotsElement.textContent = spotsRemaining;
+            updateAllSpots(spotsRemaining);
 
-            // Add pulse animation
-            spotsElement.classList.add('pulse');
-            setTimeout(() => spotsElement.classList.remove('pulse'), 600);
+            // Add pulse animation to all elements
+            spotsElements.forEach(el => {
+                el.classList.add('pulse');
+                setTimeout(() => el.classList.remove('pulse'), 600);
+            });
         }
     }, 30000); // Check every 30 seconds
 }
