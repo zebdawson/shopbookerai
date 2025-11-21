@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try ShopBooker AI's interactive demo. See exactly how our AI assistant handles real customer calls, books appointments, and grows your auto shop business.">
+
+    <title>Interactive Demo - ShopBooker AI | See It In Action</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon for shopbookerai.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="demo.html" class="nav-link active">Demo</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="#book-demo" class="cta-btn">
+                        Start Free Month
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn lg:hidden" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="how-it-works.html" class="mobile-menu-link">How It Works</a>
+            <a href="demo.html" class="mobile-menu-link active">Demo</a>
+            <a href="pricing.html" class="mobile-menu-link">Pricing</a>
+            <a href="about.html" class="mobile-menu-link">About</a>
+            <a href="contact.html" class="mobile-menu-link">Contact</a>
+            <a href="#book-demo" class="mobile-menu-cta">Start Free Month</a>
+        </nav>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="badge mb-6" data-aos="fade-down">
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Interactive Demo
+                </div>
+
+                <h1 class="hero-headline mb-6" data-aos="fade-up" data-aos-delay="100">
+                    See ShopBooker AI <span class="highlight-gradient">Handle Real Calls</span>
+                </h1>
+
+                <p class="hero-subtext mb-8" data-aos="fade-up" data-aos-delay="200">
+                    Try our interactive demo below. Select a scenario and watch how ShopBooker AI<br>
+                    qualifies customers, answers questions, and books appointments automatically.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#demo-simulator" class="btn-secondary">
+                        Try Demo Now
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </a>
+                    <a href="#book-demo" class="btn-outline">
+                        Book Your Demo Call
+                        <i class="fas fa-phone ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEMO SIMULATOR ==================== -->
+    <section class="section" id="demo-simulator">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title" data-aos="fade-up">
+                    Try The <span class="highlight-gradient">Interactive Demo</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Select a scenario and see how ShopBooker AI handles it like a pro
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <!-- Scenario Selector -->
+                <div class="demo-scenarios mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <button class="scenario-btn active" data-scenario="booking">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>New Appointment</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="pricing">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Price Quote</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="emergency">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Emergency Service</span>
+                    </button>
+                    <button class="scenario-btn" data-scenario="reschedule">
+                        <i class="fas fa-calendar-times"></i>
+                        <span>Reschedule</span>
+                    </button>
+                </div>
+
+                <!-- Demo Chat Interface -->
+                <div class="demo-chat-container" data-aos="fade-up" data-aos-delay="300">
+                    <!-- Chat Header -->
+                    <div class="demo-chat-header">
+                        <div class="flex items-center gap-3">
+                            <div class="demo-status-indicator pulsing"></div>
+                            <div>
+                                <div class="font-bold">ShopBooker AI</div>
+                                <div class="text-sm opacity-75">Active • Responding</div>
+                            </div>
+                        </div>
+                        <button class="demo-reset-btn" id="resetDemo">
+                            <i class="fas fa-redo-alt"></i>
+                            Reset
+                        </button>
+                    </div>
+
+                    <!-- Chat Messages -->
+                    <div class="demo-chat-messages" id="chatMessages">
+                        <!-- Messages will be inserted here by JavaScript -->
+                    </div>
+
+                    <!-- Chat Controls -->
+                    <div class="demo-chat-controls">
+                        <button class="demo-play-btn" id="playDemo">
+                            <i class="fas fa-play"></i>
+                            Start Demo
+                        </button>
+                        <button class="demo-pause-btn hidden" id="pauseDemo">
+                            <i class="fas fa-pause"></i>
+                            Pause
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demo Info -->
+                <div class="mt-8 grid md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="demo-info-card">
+                        <i class="fas fa-brain text-3xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">Natural Conversation</h4>
+                        <p class="text-sm text-gray-600">
+                            Understands context, handles interruptions, and responds like a human
+                        </p>
+                    </div>
+                    <div class="demo-info-card">
+                        <i class="fas fa-clock text-3xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">Instant Response</h4>
+                        <p class="text-sm text-gray-600">
+                            Answers in under 2 seconds with accurate, relevant information
+                        </p>
+                    </div>
+                    <div class="demo-info-card">
+                        <i class="fas fa-check-double text-3xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">Books Automatically</h4>
+                        <p class="text-sm text-gray-600">
+                            Completes the entire booking process without human intervention
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SHOWCASE ==================== -->
+    <section class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    What Makes Our AI <span class="highlight-gradient">Different</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Built specifically for auto shops, not generic phone bots
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon bg-blue-100 text-blue-600">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="feature-title">Automotive Expert</h3>
+                    <p class="feature-description">
+                        Trained on thousands of auto repair conversations. Understands "my car is making a grinding noise" and asks the right follow-up questions.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-icon bg-orange-100 text-orange-600">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Handles Multiple Calls</h3>
+                    <p class="feature-description">
+                        No more busy signals or hold music. ShopBooker AI can handle unlimited simultaneous calls without breaking a sweat.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon bg-green-100 text-green-600">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Calendar Integration</h3>
+                    <p class="feature-description">
+                        Syncs with Google Calendar, Outlook, or any major calendar app. Books appointments in real-time based on your actual availability.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">SMS Confirmations</h3>
+                    <p class="feature-description">
+                        Automatically sends appointment confirmations and reminders via SMS. Reduces no-shows by 60% on average.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon bg-red-100 text-red-600">
+                        <i class="fas fa-file-audio"></i>
+                    </div>
+                    <h3 class="feature-title">Full Call Recording</h3>
+                    <p class="feature-description">
+                        Every call is recorded and transcribed. Review conversations, track quality, and ensure compliance with zero effort.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-description">
+                        See call volume, booking rates, peak times, and revenue generated. Make data-driven decisions to grow your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== REAL RESULTS ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    Real Results from <span class="highlight-gradient">Real Shops</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    See what happens when you never miss another call
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Result 1 -->
+                <div class="result-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="result-number">+47%</div>
+                    <div class="result-label">More Appointments Booked</div>
+                    <p class="result-description">
+                        "We went from missing 10-15 calls per day to catching every single one. Our schedule is now fully booked 3 weeks out."
+                    </p>
+                    <div class="result-attribution">
+                        <strong>Mike Johnson</strong><br>
+                        <span class="text-sm text-gray-600">Mike's Auto Repair, Austin TX</span>
+                    </div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="result-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="result-number">$42K</div>
+                    <div class="result-label">Additional Monthly Revenue</div>
+                    <p class="result-description">
+                        "ShopBooker AI paid for itself in the first week. We're now capturing calls we used to miss during rush hours and after closing."
+                    </p>
+                    <div class="result-attribution">
+                        <strong>Sarah Martinez</strong><br>
+                        <span class="text-sm text-gray-600">Martinez Motors, Phoenix AZ</span>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="result-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="result-number">98%</div>
+                    <div class="result-label">Customer Satisfaction Rate</div>
+                    <p class="result-description">
+                        "Customers love getting instant answers 24/7. Our Google reviews went from 4.2 to 4.8 stars in just 2 months."
+                    </p>
+                    <div class="result-attribution">
+                        <strong>David Chen</strong><br>
+                        <span class="text-sm text-gray-600">Chen's Auto Service, Seattle WA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Testimonial Placeholder -->
+            <div class="video-testimonial" data-aos="fade-up">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle text-6xl text-white opacity-75"></i>
+                        <p class="text-white mt-4 font-semibold">Watch Shop Owner Testimonials</p>
+                        <p class="text-white text-sm opacity-75">(Coming Soon)</p>
+                    </div>
+                    <!-- TODO: Replace with actual video embed when available -->
+                    <!-- <iframe src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BOOK A PERSONALIZED DEMO ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white" id="book-demo">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
+                    Want a Personalized Demo?
+                </h2>
+                <p class="text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    Book a 15-minute call with our team. We'll show you exactly how ShopBooker AI
+                    works with YOUR shop's specific needs and answer all your questions.
+                </p>
+
+                <!-- Demo Booking Form -->
+                <form class="cta-form ghl-form" data-validate="true" data-aos="fade-up" data-aos-delay="200">
+                    <!-- TODO: Add your GoHighLevel webhook URL here -->
+                    <!-- Get your webhook from: GoHighLevel > Settings > Integrations > Webhooks -->
+                    <!-- This should be a different webhook for demo requests -->
+
+                    <input
+                        type="text"
+                        name="shop_name"
+                        placeholder="Your Shop Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="text"
+                        name="full_name"
+                        placeholder="Your Full Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required
+                        class="form-input"
+                    >
+
+                    <select name="best_time" class="form-input" required>
+                        <option value="">Best Time to Call?</option>
+                        <option value="morning">Morning (9am-12pm)</option>
+                        <option value="afternoon">Afternoon (12pm-5pm)</option>
+                        <option value="evening">Evening (5pm-8pm)</option>
+                    </select>
+
+                    <textarea
+                        name="message"
+                        placeholder="Any specific questions or concerns? (Optional)"
+                        rows="3"
+                        class="form-input"
+                    ></textarea>
+
+                    <input type="hidden" name="source" value="Demo Page">
+                    <input type="hidden" name="form_type" value="Demo Request">
+
+                    <button type="submit" class="cta-btn cta-btn-lg w-full">
+                        Book My Personalized Demo
+                        <i class="fas fa-calendar-check ml-2"></i>
+                    </button>
+
+                    <p class="text-sm mt-4 opacity-75">
+                        <i class="fas fa-lock mr-1"></i>
+                        100% free • No obligation • We'll call at your preferred time
+                    </p>
+                </form>
+
+                <!-- What to Expect -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="demo-expectation">
+                        <i class="fas fa-clock text-3xl mb-3"></i>
+                        <h4 class="font-bold mb-2">15 Minutes</h4>
+                        <p class="text-sm opacity-75">Quick, focused, and respectful of your time</p>
+                    </div>
+                    <div class="demo-expectation">
+                        <i class="fas fa-user-tie text-3xl mb-3"></i>
+                        <h4 class="font-bold mb-2">No Sales Pressure</h4>
+                        <p class="text-sm opacity-75">Just a helpful conversation about your shop</p>
+                    </div>
+                    <div class="demo-expectation">
+                        <i class="fas fa-lightbulb text-3xl mb-3"></i>
+                        <h4 class="font-bold mb-2">Custom Solutions</h4>
+                        <p class="text-sm opacity-75">Tailored specifically to your business needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img mb-4">
+                    <p class="text-gray-400 text-sm mb-4">
+                        AI-powered phone assistant for auto repair shops. Never miss a call, never lose a customer.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:support@shopbookerai.com">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+18005551234">(800) 555-1234</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/demo.js"></script>
+
+</body>
+</html>

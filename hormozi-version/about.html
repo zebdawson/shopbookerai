@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about ShopBooker AI's mission to help auto repair shops never miss another call. Founded by shop owners who understand your challenges.">
+
+    <title>About Us - ShopBooker AI | Our Mission & Story</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon for shopbookerai.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="demo.html" class="nav-link">Demo</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="contact.html" class="cta-btn">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn lg:hidden" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="how-it-works.html" class="mobile-menu-link">How It Works</a>
+            <a href="demo.html" class="mobile-menu-link">Demo</a>
+            <a href="pricing.html" class="mobile-menu-link">Pricing</a>
+            <a href="about.html" class="mobile-menu-link active">About</a>
+            <a href="contact.html" class="mobile-menu-link">Contact</a>
+            <a href="contact.html" class="mobile-menu-cta">Get Started</a>
+        </nav>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="badge mb-6" data-aos="fade-down">
+                    <i class="fas fa-heart mr-2"></i>
+                    Built By Shop Owners, For Shop Owners
+                </div>
+
+                <h1 class="hero-headline mb-6" data-aos="fade-up" data-aos-delay="100">
+                    We Understand Your <span class="highlight-gradient">Struggle</span><br>
+                    Because We've <span class="highlight-gradient">Lived It</span>
+                </h1>
+
+                <p class="hero-subtext mb-8" data-aos="fade-up" data-aos-delay="200">
+                    ShopBooker AI was born from frustration - losing customers because we couldn't answer the phone<br>
+                    while under the hood. Now we help thousands of shops solve the same problem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOUNDER STORY ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div data-aos="fade-right">
+                        <div class="story-image-placeholder">
+                            <i class="fas fa-user-tie text-8xl text-gray-300"></i>
+                            <p class="text-gray-500 mt-4">Founder Photo</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class="text-4xl font-black mb-6">The Problem That Started It All</h2>
+                        <div class="prose prose-lg">
+                            <p class="mb-4">
+                                "I was elbows-deep in a transmission rebuild when my phone rang for the fifth time that hour.
+                                I couldn't answer - my hands were covered in grease. By the time I cleaned up and called back,
+                                they'd already gone to the shop down the street."
+                            </p>
+                            <p class="mb-4">
+                                <strong>That single missed call cost me $2,400 in revenue.</strong>
+                            </p>
+                            <p class="mb-4">
+                                After running my shop for 12 years, I realized this was happening dozens of times per week.
+                                I tried hiring a receptionist, but she called in sick. I tried an answering service,
+                                but they couldn't book appointments or answer technical questions.
+                            </p>
+                            <p class="mb-4">
+                                So I partnered with AI engineers to build exactly what I needed: an assistant who understands
+                                automotive repair, never takes a day off, and books appointments 24/7.
+                            </p>
+                            <p class="font-bold text-xl mt-6">
+                                That's how ShopBooker AI was born.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR MISSION ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-8" data-aos="fade-up">
+                    Our Mission
+                </h2>
+                <p class="text-2xl font-semibold mb-8" data-aos="fade-up" data-aos-delay="100">
+                    To make sure no shop owner ever loses another customer<br>
+                    simply because they were too busy doing actual work.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-phone-volume text-5xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Never Miss a Call</h3>
+                        <p class="opacity-90">
+                            Every call is a potential customer. Our AI ensures you capture 100% of incoming opportunities.
+                        </p>
+                    </div>
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-chart-line text-5xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Grow Revenue</h3>
+                        <p class="opacity-90">
+                            More answered calls = more booked appointments = more revenue. It's that simple.
+                        </p>
+                    </div>
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-wrench text-5xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Focus on Repairs</h3>
+                        <p class="opacity-90">
+                            Let AI handle the phone so you can focus on what you do best - fixing cars.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== OUR VALUES ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    Our <span class="highlight-gradient">Core Values</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    The principles that guide everything we do
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Value 1 -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="value-title">Shop Owners First</h3>
+                        <p class="value-description">
+                            We build for shop owners, not investors. Every feature is designed to solve real problems
+                            you face every day.
+                        </p>
+                    </div>
+
+                    <!-- Value 2 -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="value-title">Transparency</h3>
+                        <p class="value-description">
+                            No hidden fees, no contracts, no BS. Simple pricing, honest communication,
+                            and straight answers.
+                        </p>
+                    </div>
+
+                    <!-- Value 3 -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="value-title">Constant Innovation</h3>
+                        <p class="value-description">
+                            AI technology evolves fast, and so do we. We're always improving, always updating,
+                            always making it better.
+                        </p>
+                    </div>
+
+                    <!-- Value 4 -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="value-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="value-title">World-Class Support</h3>
+                        <p class="value-description">
+                            When you need help, you get a real person who knows the auto industry - not a chatbot
+                            or offshore call center.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BY THE NUMBERS ==================== -->
+    <section class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    ShopBooker AI <span class="highlight-gradient">By The Numbers</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number-big">500+</div>
+                    <div class="stat-label-big">Active Shops</div>
+                    <p class="stat-description">Shops across North America trust us daily</p>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number-big">1M+</div>
+                    <div class="stat-label-big">Calls Handled</div>
+                    <p class="stat-description">Successfully answered and processed</p>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number-big">250K+</div>
+                    <div class="stat-label-big">Appointments Booked</div>
+                    <p class="stat-description">Automatically scheduled without human input</p>
+                </div>
+
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number-big">$127M+</div>
+                    <div class="stat-label-big">Revenue Generated</div>
+                    <p class="stat-description">For our shop owner partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY WE'RE DIFFERENT ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black text-center mb-12" data-aos="fade-up">
+                    Why We're <span class="highlight-gradient">Different</span>
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Difference 1 -->
+                    <div class="difference-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="difference-number">1</div>
+                        <div class="difference-content">
+                            <h3 class="difference-title">We're Shop Owners, Not Tech Bros</h3>
+                            <p class="difference-description">
+                                Our founders have spent decades in the bays, not boardrooms. We understand grease, not just code.
+                                Every feature is built from real shop experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Difference 2 -->
+                    <div class="difference-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="difference-number">2</div>
+                        <div class="difference-content">
+                            <h3 class="difference-title">Built Specifically for Auto Repair</h3>
+                            <p class="difference-description">
+                                Other AI assistants are generic. Ours understands "my check engine light is on" and
+                                knows the difference between a brake job and an oil change. It speaks automotive fluently.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Difference 3 -->
+                    <div class="difference-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="difference-number">3</div>
+                        <div class="difference-content">
+                            <h3 class="difference-title">Obsessed With Results, Not Features</h3>
+                            <p class="difference-description">
+                                We don't care about flashy tech demos. We care about one metric: Did you book more appointments?
+                                Everything we build drives toward that goal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Difference 4 -->
+                    <div class="difference-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="difference-number">4</div>
+                        <div class="difference-content">
+                            <h3 class="difference-title">No Contracts or Games</h3>
+                            <p class="difference-description">
+                                We earn your business every month by delivering value. Don't like it? Cancel anytime.
+                                We win when you win, not by trapping you in a contract.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== JOIN US CTA ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
+                    Join 500+ Shops Growing With ShopBooker AI
+                </h2>
+                <p class="text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    Be part of the movement transforming how auto shops handle phone calls
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="pricing.html" class="cta-btn cta-btn-lg">
+                        See Pricing & Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="contact.html" class="btn-outline-light">
+                        Talk to Our Team
+                        <i class="fas fa-phone ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-3 gap-8 mt-16 opacity-75">
+                    <div>
+                        <div class="text-4xl font-black mb-2">4.9/5</div>
+                        <div class="text-sm">Average Rating</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black mb-2">98%</div>
+                        <div class="text-sm">Customer Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black mb-2">24/7</div>
+                        <div class="text-sm">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img mb-4">
+                    <p class="text-gray-400 text-sm mb-4">
+                        AI-powered phone assistant for auto repair shops. Never miss a call, never lose a customer.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:support@shopbookerai.com">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+18005551234">(800) 555-1234</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

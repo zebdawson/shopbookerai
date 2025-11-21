@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopBooker AI pricing: $797/month for unlimited calls, automatic bookings, and 24/7 service. No contracts, cancel anytime. See your ROI calculator.">
+
+    <title>Pricing - ShopBooker AI | $797/Month, No Contracts</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon for shopbookerai.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1E3A8A',
+                        'secondary-orange': '#F97316',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Chart.js for ROI visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="how-it-works.html" class="nav-link">How It Works</a>
+                    <a href="demo.html" class="nav-link">Demo</a>
+                    <a href="pricing.html" class="nav-link active">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="#get-started" class="cta-btn">
+                        Start Free Month
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn lg:hidden" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="mobile-menu-link">Home</a>
+            <a href="how-it-works.html" class="mobile-menu-link">How It Works</a>
+            <a href="demo.html" class="mobile-menu-link">Demo</a>
+            <a href="pricing.html" class="mobile-menu-link active">Pricing</a>
+            <a href="about.html" class="mobile-menu-link">About</a>
+            <a href="contact.html" class="mobile-menu-link">Contact</a>
+            <a href="#get-started" class="mobile-menu-cta">Start Free Month</a>
+        </nav>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-secondary">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="badge mb-6" data-aos="fade-down">
+                    <i class="fas fa-tag mr-2"></i>
+                    Simple, Transparent Pricing
+                </div>
+
+                <h1 class="hero-headline mb-6" data-aos="fade-up" data-aos-delay="100">
+                    <span class="highlight-gradient">$797/Month</span><br>
+                    Unlimited Calls. Unlimited Bookings.
+                </h1>
+
+                <p class="hero-subtext mb-8" data-aos="fade-up" data-aos-delay="200">
+                    No setup fees. No per-call charges. No hidden costs. No contracts.<br>
+                    Just one simple price for unlimited 24/7 AI phone service.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#pricing-details" class="btn-secondary">
+                        See What's Included
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </a>
+                    <a href="#roi-calculator" class="btn-outline">
+                        Calculate Your ROI
+                        <i class="fas fa-calculator ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING CARD ==================== -->
+    <section class="section" id="pricing-details">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Main Pricing Card -->
+                <div class="pricing-hero-card" data-aos="fade-up">
+                    <div class="pricing-badge">
+                        <i class="fas fa-star"></i>
+                        MOST POPULAR
+                    </div>
+
+                    <h2 class="pricing-plan-name">ShopBooker AI Complete</h2>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">$</span>
+                        <span class="pricing-number">797</span>
+                        <span class="pricing-period">/month</span>
+                    </div>
+
+                    <p class="pricing-description">
+                        Everything your auto shop needs to never miss another call.
+                        No per-minute charges. No call limits. No surprises.
+                    </p>
+
+                    <a href="#get-started" class="pricing-cta-btn">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Start Your Free Month
+                    </a>
+
+                    <p class="pricing-guarantee">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        30-Day Money-Back Guarantee • No Credit Card Required • Cancel Anytime
+                    </p>
+
+                    <!-- What's Included -->
+                    <div class="pricing-features">
+                        <h3 class="pricing-features-title">Everything Included:</h3>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Unlimited</strong> phone calls 24/7</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>Unlimited</strong> appointment bookings</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Natural AI conversations (not robotic)</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Handles multiple calls simultaneously</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Calendar integration (Google, Outlook, etc.)</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>SMS appointment confirmations & reminders</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full call recordings & transcripts</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time booking notifications</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom shop info & service pricing</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Analytics & reporting dashboard</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Priority customer support</span>
+                            </div>
+                            <div class="pricing-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free updates & new features</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Elements -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-badge-card">
+                        <i class="fas fa-lock text-4xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">No Contracts</h4>
+                        <p class="text-sm text-gray-600">Cancel anytime with zero penalties or fees</p>
+                    </div>
+                    <div class="trust-badge-card">
+                        <i class="fas fa-credit-card text-4xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">No Setup Fees</h4>
+                        <p class="text-sm text-gray-600">Get started free, pay nothing until month 2</p>
+                    </div>
+                    <div class="trust-badge-card">
+                        <i class="fas fa-infinity text-4xl text-secondary-orange mb-3"></i>
+                        <h4 class="font-bold mb-2">Unlimited Usage</h4>
+                        <p class="text-sm text-gray-600">No per-call fees or hidden charges ever</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ROI CALCULATOR ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white" id="roi-calculator">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black mb-4" data-aos="fade-up">
+                    Calculate Your Exact ROI
+                </h2>
+                <p class="text-xl opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    See how much money you're losing right now, and how ShopBooker AI pays for itself
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="roi-calculator-card" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Calculator Inputs -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="calculator-input-group">
+                            <label class="calculator-label">
+                                <i class="fas fa-phone-slash mr-2"></i>
+                                Missed Calls Per Week
+                            </label>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm">Conservative</span>
+                                <span class="text-2xl font-black" id="missedCallsValue">10</span>
+                                <span class="text-sm">Realistic</span>
+                            </div>
+                            <input
+                                type="range"
+                                id="missedCallsSlider"
+                                class="calculator-slider"
+                                min="1"
+                                max="50"
+                                value="10"
+                            >
+                        </div>
+
+                        <div class="calculator-input-group">
+                            <label class="calculator-label">
+                                <i class="fas fa-dollar-sign mr-2"></i>
+                                Average Ticket Size
+                            </label>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm">Low</span>
+                                <span class="text-2xl font-black" id="avgTicketValue">$500</span>
+                                <span class="text-sm">High</span>
+                            </div>
+                            <input
+                                type="range"
+                                id="avgTicketSlider"
+                                class="calculator-slider"
+                                min="100"
+                                max="2000"
+                                value="500"
+                                step="50"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Results Display -->
+                    <div class="roi-results">
+                        <div class="roi-result-row">
+                            <div class="roi-result-item bad">
+                                <div class="roi-result-label">
+                                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                                    You're Losing Per Month
+                                </div>
+                                <div class="roi-result-value">
+                                    $<span id="monthlyLost">20000</span>
+                                </div>
+                            </div>
+
+                            <div class="roi-result-divider">-</div>
+
+                            <div class="roi-result-item neutral">
+                                <div class="roi-result-label">
+                                    <i class="fas fa-tag mr-2"></i>
+                                    ShopBooker AI Cost
+                                </div>
+                                <div class="roi-result-value">
+                                    $797
+                                </div>
+                            </div>
+
+                            <div class="roi-result-divider">=</div>
+
+                            <div class="roi-result-item good">
+                                <div class="roi-result-label">
+                                    <i class="fas fa-chart-line mr-2"></i>
+                                    Your Net Monthly Gain
+                                </div>
+                                <div class="roi-result-value">
+                                    $<span id="monthlySavings">19203</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROI Percentage -->
+                        <div class="roi-percentage-display">
+                            <div class="text-lg mb-2">Return on Investment</div>
+                            <div class="text-6xl font-black">
+                                <span id="roiPercentage">2409</span>%
+                            </div>
+                            <div class="text-sm mt-2 opacity-75">
+                                That means for every $1 you spend, you make $<span id="roiMultiplier">24</span>
+                            </div>
+                        </div>
+
+                        <!-- Yearly Projection -->
+                        <div class="yearly-projection">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-sm opacity-75">Yearly Revenue Saved</div>
+                                    <div class="text-3xl font-black">
+                                        $<span id="yearlySaved">240000</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-sm opacity-75">Yearly Cost</div>
+                                    <div class="text-2xl font-bold">
+                                        $9,564
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-sm opacity-75">Your Yearly Profit</div>
+                                    <div class="text-3xl font-black text-green-400">
+                                        $<span id="yearlyProfit">230436</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="text-center mt-8">
+                        <p class="text-lg mb-4">Can you afford to keep losing this much money?</p>
+                        <a href="#get-started" class="cta-btn cta-btn-lg">
+                            Stop Losing Money - Start Free Trial
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPARISON TABLE ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    Compare Your <span class="highlight-gradient">Real Options</span>
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    See how ShopBooker AI stacks up against traditional solutions
+                </p>
+            </div>
+
+            <div class="comparison-table-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Solution</th>
+                            <th class="highlight-col">
+                                <div class="text-xl font-black">ShopBooker AI</div>
+                                <div class="text-sm font-normal opacity-90">Recommended</div>
+                            </th>
+                            <th>Full-Time Receptionist</th>
+                            <th>Part-Time Receptionist</th>
+                            <th>Answering Service</th>
+                            <th>Do Nothing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Monthly Cost</td>
+                            <td class="highlight-col"><strong>$797</strong></td>
+                            <td>$3,500 - $4,500</td>
+                            <td>$1,500 - $2,000</td>
+                            <td>$500 - $1,200</td>
+                            <td class="text-red-600"><strong>($20,000+)</strong><br><span class="text-xs">in lost revenue</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Setup Cost</td>
+                            <td class="highlight-col">$0</td>
+                            <td>$2,000 - $5,000<br><span class="text-xs">(recruitment, training)</span></td>
+                            <td>$1,000 - $2,500</td>
+                            <td>$0 - $500</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Availability</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                24/7/365
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Business hours only
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Limited hours
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                                24/7
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Never
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Books Appointments</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                Yes, automatically
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                                Yes
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                                When available
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                No (just messages)
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                No
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Handles Multiple Calls</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                Unlimited
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                One at a time
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                One at a time
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Limited lines
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                No
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Never Calls In Sick</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                            </td>
+                            <td>
+                                <i class="fas fa-minus-circle text-gray-400"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Training Required</td>
+                            <td class="highlight-col">None (2 min setup)</td>
+                            <td>2-4 weeks</td>
+                            <td>1-2 weeks</td>
+                            <td>Minimal</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Automotive Knowledge</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                Built-in expert
+                            </td>
+                            <td>
+                                <i class="fas fa-question-circle text-yellow-500"></i>
+                                Depends on hire
+                            </td>
+                            <td>
+                                <i class="fas fa-question-circle text-yellow-500"></i>
+                                Depends on hire
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Generic scripts
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                None
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Call Recording</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                All calls
+                            </td>
+                            <td>
+                                <i class="fas fa-question-circle text-yellow-500"></i>
+                                If configured
+                            </td>
+                            <td>
+                                <i class="fas fa-question-circle text-yellow-500"></i>
+                                If configured
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                                Usually
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                No calls
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Analytics & Reporting</td>
+                            <td class="highlight-col">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                Full dashboard
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Manual tracking
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                Manual tracking
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle text-green-600"></i>
+                                Basic reports
+                            </td>
+                            <td>
+                                <i class="fas fa-times-circle text-red-500"></i>
+                                None
+                            </td>
+                        </tr>
+                        <tr class="total-row">
+                            <td class="font-bold">Total First Year Cost</td>
+                            <td class="highlight-col font-black text-2xl">$9,564</td>
+                            <td class="font-bold">$45,000 - $59,000</td>
+                            <td class="font-bold">$19,000 - $26,500</td>
+                            <td class="font-bold">$6,500 - $14,900</td>
+                            <td class="font-bold text-red-600">-$240,000+<br><span class="text-xs font-normal">(lost revenue)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up">
+                <p class="text-xl font-semibold mb-4">The numbers don't lie. ShopBooker AI is the smart choice.</p>
+                <a href="#get-started" class="cta-btn cta-btn-lg">
+                    Start Saving Money Today
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MONEY-BACK GUARANTEE ==================== -->
+    <section class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="guarantee-box" data-aos="fade-up">
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="guarantee-title">Our Iron-Clad 30-Day Money-Back Guarantee</h2>
+                    <p class="guarantee-text">
+                        We're so confident that ShopBooker AI will transform your business that we're putting our money where our mouth is:
+                    </p>
+                    <div class="guarantee-promise">
+                        <p>
+                            <strong>If ShopBooker AI doesn't book at least 10x its monthly cost in new appointments within 30 days,
+                            we'll refund every penny - no questions asked.</strong>
+                        </p>
+                    </div>
+                    <p class="guarantee-subtext">
+                        You have absolutely nothing to lose and everything to gain. The only risk is continuing to lose customers
+                        because you're missing calls right now.
+                    </p>
+                    <div class="text-center mt-8">
+                        <a href="#get-started" class="cta-btn cta-btn-lg">
+                            Start Risk-Free Trial
+                            <i class="fas fa-lock ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING FAQ ==================== -->
+    <section class="section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title" data-aos="fade-up">
+                    Pricing <span class="highlight-gradient">Questions Answered</span>
+                </h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-question" tabindex="0">
+                            <span>Is there really no setup fee?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely zero setup fees. We'll have you up and running in 2 minutes at no cost. Your first month is free, and you only start paying in month 2.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                        <button class="faq-question" tabindex="0">
+                            <span>Are there any per-call or per-minute charges?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nope! $797/month gets you unlimited calls, unlimited minutes, and unlimited bookings. We want you to get as many calls as possible - that's how you make money!</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-question" tabindex="0">
+                            <span>Do I have to sign a contract?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No contracts whatsoever. Cancel anytime with zero penalties or fees. We earn your business every single month by delivering results.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                        <button class="faq-question" tabindex="0">
+                            <span>What if I get more than my usual call volume?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>That's the beauty of ShopBooker AI - there's no limit! Whether you get 10 calls or 1,000 calls in a day, the price stays the same. Scale up your marketing without worrying about phone capacity.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-question" tabindex="0">
+                            <span>Can I upgrade or downgrade my plan?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We only have one plan - and it includes everything! No tiers, no upsells, no "premium" features locked behind higher prices. Everyone gets the full platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                        <button class="faq-question" tabindex="0">
+                            <span>How does the 30-day money-back guarantee work?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simple: If you're not satisfied within the first 30 days for any reason, just email us and we'll refund 100% of your payment. No hoops to jump through, no questions asked.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-question" tabindex="0">
+                            <span>Do I need to buy any special hardware or equipment?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nothing! ShopBooker AI works with your existing phone number and internet connection. No special phones, no hardware to buy, nothing to install.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FINAL CTA ==================== -->
+    <section class="section bg-gradient-to-br from-primary-blue to-blue-900 text-white" id="get-started">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black mb-6" data-aos="fade-up">
+                    Stop Losing $20,000+ Every Month
+                </h2>
+                <p class="text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
+                    Join 500+ auto shops using ShopBooker AI to capture every call and maximize revenue
+                </p>
+
+                <!-- Signup Form -->
+                <form class="cta-form ghl-form" data-validate="true" data-aos="fade-up" data-aos-delay="200">
+                    <!-- TODO: Add your GoHighLevel webhook URL here -->
+
+                    <input
+                        type="text"
+                        name="shop_name"
+                        placeholder="Your Shop Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="text"
+                        name="full_name"
+                        placeholder="Your Full Name"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                        class="form-input"
+                    >
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required
+                        class="form-input"
+                    >
+
+                    <input type="hidden" name="source" value="Pricing Page">
+                    <input type="hidden" name="form_type" value="Free Month Signup">
+
+                    <button type="submit" class="cta-btn cta-btn-lg w-full">
+                        Start My Free Month - No Credit Card
+                        <i class="fas fa-rocket ml-2"></i>
+                    </button>
+
+                    <p class="text-sm mt-4 opacity-75">
+                        <i class="fas fa-lock mr-1"></i>
+                        First month free • No credit card required • 2-minute setup • Cancel anytime
+                    </p>
+                </form>
+
+                <!-- Trust Signals -->
+                <div class="flex flex-wrap justify-center gap-8 mt-12 opacity-75" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-users text-2xl"></i>
+                        <span class="text-sm">500+ Shops</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-star text-2xl"></i>
+                        <span class="text-sm">4.9/5 Rating</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone-volume text-2xl"></i>
+                        <span class="text-sm">1M+ Calls Handled</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <img src="images/ShopBookerAI Primary Logo.png" alt="ShopBooker AI" class="logo-img mb-4">
+                    <p class="text-gray-400 text-sm mb-4">
+                        AI-powered phone assistant for auto repair shops. Never miss a call, never lose a customer.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:support@shopbookerai.com">support@shopbookerai.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+18005551234">(800) 555-1234</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopBooker AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
+
+</body>
+</html>
